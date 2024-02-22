@@ -7,7 +7,7 @@ namespace Core.PixelService.PeakVentures.Services
     {
         public MemoryStream GenerateGif()
         {
-            using (var image = new MagickImage(MagickColors.Red, 100, 100))
+            using (var image = new MagickImage(MagickColors.Transparent, 1, 1))
             {
                 var stream = new MemoryStream();
                 image.Format = MagickFormat.Gif;
