@@ -7,11 +7,11 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["Api.PeakVentures/01-Api.PixelService.PeakVentures.csproj", "Api.PeakVentures/"]
+COPY ["Api.PixelService.PeakVentures/01-Api.PixelService.PeakVentures.csproj", "Api.PixelService.PeakVentures/"]
 COPY ["Core.PixelService.PeakVentures/02-Core.PixelService.PeakVentures.csproj", "Core.PixelService.PeakVentures/"]
-RUN dotnet restore "Api.PeakVentures/01-Api.PixelService.PeakVentures.csproj"
+RUN dotnet restore "Api.PixelService.PeakVentures/01-Api.PixelService.PeakVentures.csproj"
 COPY . .
-WORKDIR "/src/Api.PeakVentures"
+WORKDIR "/src/Api.PixelService.PeakVentures"
 RUN dotnet build "01-Api.PixelService.PeakVentures.csproj" -c Release -o /app/build
 
 FROM build AS publish
