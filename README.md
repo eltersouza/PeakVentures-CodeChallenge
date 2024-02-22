@@ -26,7 +26,7 @@ Example:
 * 2022-12-19T14:17:49.9605280Z|https://bing.com|AnotherUserAgent 4.5.6|10.0.0.1
 * 2022-12-19T14:16:49.9605280Z|null|null|8.8.8.8
 
-##Contraints
+## Contraints
 1. There could be **multiple instances of Pixel Service** sending events simultaneously, but the **Storage Service is always one**. No need to handle any concurrency issues other than writing to the file. The order of writes does not matter. 
 2. Pixel Service runs without any HTTP balancers / WAFs in front of it. Thereʼs no need to handle proxied headers. 
 3. Chose the communication protocol between Pixel and Store services that you think makes sense for that task. Pixel and Store services might be running inside different networks without direct access to each other, but both have access to any required third-party services. The connection string or any appsettings.json or get overridden by the connection parameters will be passed via the environment variables.
