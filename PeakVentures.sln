@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-Api.PixelService.PeakVentures", "Api.PeakVentures\01-Api.PixelService.PeakVentures.csproj", "{379F0EDB-A675-44F3-B321-62934877444C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-Core.PixelService.PeakVentures", "Core.PixelService.PeakVentures\02-Core.PixelService.PeakVentures.csproj", "{50632EB1-453C-40A2-98A5-87A10A1CE58C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-Test.PixelService.PeakVenture", "Test.PixelService.PeakVenture\03-Test.PixelService.PeakVenture.csproj", "{7ABEC5C1-02AE-4865-A386-5CF9078292A8}"
@@ -13,11 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PixelService", "PixelServic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StorageService", "StorageService", "{7FBFC3E3-66A9-433F-8C04-7EB802440C77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-Worker.StorageService.PeakVentures", "Worker.StorageService.PeakVentures\01-Worker.StorageService.PeakVentures.csproj", "{7170A329-99C7-4A89-BE64-1DE960EA64B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-Worker.StorageService.PeakVentures", "Worker.StorageService.PeakVentures\01-Worker.StorageService.PeakVentures.csproj", "{7170A329-99C7-4A89-BE64-1DE960EA64B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-Core.StorageSevice.PeakVentures", "Core.StorageSevice.PeakVentures\02-Core.StorageSevice.PeakVentures.csproj", "{B9889ADA-7200-4239-9DC7-4217EE62DBBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-Core.StorageSevice.PeakVentures", "Core.StorageSevice.PeakVentures\02-Core.StorageSevice.PeakVentures.csproj", "{B9889ADA-7200-4239-9DC7-4217EE62DBBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-Test.StorageService.PeakVentures", "Test.StorageService.PeakVentures\03-Test.StorageService.PeakVentures.csproj", "{5A62645C-F244-4FB0-9EAD-8C617AC499F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-Test.StorageService.PeakVentures", "Test.StorageService.PeakVentures\03-Test.StorageService.PeakVentures.csproj", "{5A62645C-F244-4FB0-9EAD-8C617AC499F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-Api.PixelService.PeakVentures", "Api.PixelService.PeakVentures\01-Api.PixelService.PeakVentures.csproj", "{26324534-B123-4604-85A5-05CB43545B7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{379F0EDB-A675-44F3-B321-62934877444C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{379F0EDB-A675-44F3-B321-62934877444C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{379F0EDB-A675-44F3-B321-62934877444C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{379F0EDB-A675-44F3-B321-62934877444C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{50632EB1-453C-40A2-98A5-87A10A1CE58C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{50632EB1-453C-40A2-98A5-87A10A1CE58C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50632EB1-453C-40A2-98A5-87A10A1CE58C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -49,17 +45,21 @@ Global
 		{5A62645C-F244-4FB0-9EAD-8C617AC499F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A62645C-F244-4FB0-9EAD-8C617AC499F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A62645C-F244-4FB0-9EAD-8C617AC499F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26324534-B123-4604-85A5-05CB43545B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26324534-B123-4604-85A5-05CB43545B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26324534-B123-4604-85A5-05CB43545B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26324534-B123-4604-85A5-05CB43545B7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{379F0EDB-A675-44F3-B321-62934877444C} = {FDC91524-4215-4308-89DA-5A2E64808D4D}
 		{50632EB1-453C-40A2-98A5-87A10A1CE58C} = {FDC91524-4215-4308-89DA-5A2E64808D4D}
 		{7ABEC5C1-02AE-4865-A386-5CF9078292A8} = {FDC91524-4215-4308-89DA-5A2E64808D4D}
 		{7170A329-99C7-4A89-BE64-1DE960EA64B0} = {7FBFC3E3-66A9-433F-8C04-7EB802440C77}
 		{B9889ADA-7200-4239-9DC7-4217EE62DBBA} = {7FBFC3E3-66A9-433F-8C04-7EB802440C77}
 		{5A62645C-F244-4FB0-9EAD-8C617AC499F1} = {7FBFC3E3-66A9-433F-8C04-7EB802440C77}
+		{26324534-B123-4604-85A5-05CB43545B7F} = {FDC91524-4215-4308-89DA-5A2E64808D4D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4DD02C66-20DB-4F55-B6FA-1E91B4BB049F}
